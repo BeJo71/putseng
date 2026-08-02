@@ -1,0 +1,102 @@
+.hero {
+  min-height: 560px;
+  padding: 6rem 0;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f7faf5 0%, #edf4e8 100%);
+}
+
+.hero-content {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+}
+
+.hero-label {
+  margin-bottom: 1rem;
+  color: #567a20;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin-bottom: 1.25rem;
+  color: #171717;
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  line-height: 1.05;
+}
+
+.hero-description {
+  max-width: 630px;
+  margin-bottom: 2rem;
+  color: #454545;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.call-button,
+.contact-button {
+  min-width: 170px;
+  padding: 0.95rem 1.5rem;
+  border: 2px solid #567a20;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.call-button {
+  background-color: #567a20;
+  color: #ffffff;
+}
+
+.contact-button {
+  background-color: transparent;
+  color: #3f5f15;
+}
+
+.call-button:hover,
+.contact-button:hover {
+  transform: translateY(-2px);
+}
+
+.call-button:hover {
+  background-color: #466619;
+}
+
+.contact-button:hover {
+  background-color: #567a20;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: auto;
+    padding: 4.5rem 0;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .call-button,
+  .contact-button {
+    width: 100%;
+  }
+}
