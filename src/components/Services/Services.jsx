@@ -3,7 +3,7 @@ import "./Services.css";
 function Services() {
   const services = [
     {
-      title: "Privatpersoner",
+      title: "Privatpe rsoner",
       description:
         "Noggrann fönsterputs för villor, lägenheter och fritidshus.",
     },
