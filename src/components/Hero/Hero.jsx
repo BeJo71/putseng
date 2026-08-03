@@ -10,8 +10,8 @@ function Hero() {
           <h1>Rena fönster utan krångel</h1>
 
           <p className="hero-description">
-            Fönsterputs för privatpersoner och företag med fokus på noggrant
-            utfört arbete och personlig service.
+            Noggrant utförd fönsterputs med personlig service.
+            Kontakta oss för mer information eller en prisförfrågan.
           </p>
 
           <div className="hero-actions">

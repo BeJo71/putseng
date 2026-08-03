@@ -1,0 +1,139 @@
+.contact {
+  padding: 6rem 0;
+  background-color: #ffffff;
+}
+
+.contact-container {
+  width: min(850px, 90%);
+  margin: 0 auto;
+}
+
+.contact-heading {
+  margin-bottom: 2.5rem;
+}
+
+.contact-label {
+  margin-bottom: 0.75rem;
+  color: #567a20;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-heading h2 {
+  margin-bottom: 1rem;
+  color: #171717;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.contact-heading p {
+  max-width: 620px;
+  color: #555555;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 1px solid #dfe8d8;
+  border-radius: 0.75rem;
+  background-color: #f8faf6;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  color: #262626;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #bfc9b8;
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+  color: #202020;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #567a20;
+  outline: 3px solid rgba(86, 122, 32, 0.15);
+}
+
+.submit-button {
+  grid-column: 1 / -1;
+  width: fit-content;
+  padding: 0.95rem 1.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #567a20;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #466619;
+}
+
+.direct-contact {
+  margin-top: 2rem;
+}
+
+.direct-contact p {
+  margin-bottom: 1rem;
+  color: #555555;
+}
+
+.direct-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.direct-contact-links a {
+  color: #3f5f15;
+  font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .contact {
+    padding: 4.5rem 0;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .form-group-full,
+  .submit-button {
+    grid-column: auto;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+
+  .direct-contact-links {
+    flex-direction: column;
+  }
+}

@@ -7,11 +7,7 @@ function Services() {
       description:
         "Noggrann fönsterputs för villor, lägenheter och fritidshus.",
     },
-    {
-      title: "Företag",
-      description:
-        "Professionell fönsterputs för kontor, butiker och andra verksamheter.",
-    },
+    
     
   ];
 
